@@ -1,0 +1,100 @@
+<!-- inventory/templates/inventory/ingredient_list.html -->
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Responsive design -->
+    <title>Ingredient Inventory</title>
+    <link rel="stylesheet" href="{% static 'inventory/style.css' %}"> <!-- Linking the CSS file -->
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Ingredient Inventory</h1>
+            <p>Explore the ingredients available in our Chocolate House.</p>
+        </header>
+        
+        <main>
+            <ul class="ingredient-list">
+                {% for ingredient in ingredients %}
+                    <li class="ingredient-item">
+                        <strong>{{ ingredient.name }}</strong> - <span class="quantity">Quantity: {{ ingredient.quantity }}</span>
+                    </li>
+                {% empty %}
+                    <li>No ingredients available at the moment.</li>
+                {% endfor %}
+                <!-- Example Ingredients (replace with your dynamic content) -->
+                <li class="ingredient-item">
+                    <strong>Milk Chocolate</strong> - <span class="quantity">Quantity: 200</span>
+                </li>
+                <li class="ingredient-item">
+                    <strong>Dark Chocolate</strong> - <span class="quantity">Quantity: 150</span>
+                </li>
+                <li class="ingredient-item">
+                    <strong>White Chocolate</strong> - <span class="quantity">Quantity: 100</span>
+                </li>
+                <li class="ingredient-item">
+                    <strong>Almonds</strong> - <span class="quantity">Quantity: 75</span>
+                </li>
+                <li class="ingredient-item">
+                    <strong>Milk</strong> - <span class="quantity">Quantity: 1L</span>
+                </li>
+                <li class="ingredient-item">
+                    <strong>Flour</strong> - <span class="quantity">Quantity: 500g</span>
+                </li>
+                <li class="ingredient-item">
+                    <strong>Baking Powder</strong> - <span class="quantity">Quantity: 200g</span>
+                </li>
+                <li class="ingredient-item">
+                    <strong>Honey</strong> - <span class="quantity">Quantity: 300g</span>
+                </li>
+                <li class="ingredient-item">
+                    <strong>Coconut Flakes</strong> - <span class="quantity">Quantity: 150g</span>
+                </li>
+                <li class="ingredient-item">
+                    <strong>Peanut Butter</strong> - <span class="quantity">Quantity: 250g</span>
+                </li>
+                <li class="ingredient-item">
+                    <strong>Maple Syrup</strong> - <span class="quantity">Quantity: 200ml</span>
+                </li>
+                <li class="ingredient-item">
+                    <strong>Sprinkles</strong> - <span class="quantity">Quantity: 100g</span>
+                </li>
+                <li class="ingredient-item">
+                    <strong>Espresso Powder</strong> - <span class="quantity">Quantity: 50g</span>
+                </li>
+                <li class="ingredient-item">
+                    <strong>Mint Leaves</strong> - <span class="quantity">Quantity: 30g</span>
+                </li>
+                <li class="ingredient-item">
+                    <strong>Cinnamon</strong> - <span class="quantity">Quantity: 25g</span>
+                </li>
+                <li class="ingredient-item">
+                    <strong>Hazelnuts</strong> - <span class="quantity">Quantity: 60</span>
+                </li>
+                <li class="ingredient-item">
+                    <strong>Sea Salt</strong> - <span class="quantity">Quantity: 30</span>
+                </li>
+                <li class="ingredient-item">
+                    <strong>Butter</strong> - <span class="quantity">Quantity: 250</span>
+                </li>
+                <li class="ingredient-item">
+                    <strong>Sugar</strong> - <span class="quantity">Quantity: 400</span>
+                </li>
+                <li class="ingredient-item">
+                    <strong>Eggs</strong> - <span class="quantity">Quantity: 12</span>
+                </li>
+            </ul>
+        </main>
+
+        <footer>
+            <a class="btn" href="{% url 'homepage' %}">Go back to homepage</a>
+            <p>&copy; 2024 Chocolate House. All rights reserved.</p>
+        </footer>
+    </div>
+</body>
+</html>
+
+
+

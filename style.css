@@ -1,0 +1,468 @@
+/* inventory/static/inventory/style.css */
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+:root {
+    --primary-color: #4CAF50; /* Green */
+    --secondary-color: #ffffff; /* White */
+    --text-color: #333333; /* Dark text */
+    --background-color: #87CEEB; /* Sky blue background color */
+    --highlight-color: #ff8c00; /* Highlight color for buttons */
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: var(--background-color); /* Use sky blue background */
+    margin: 0;
+}
+
+.container {
+    max-width: 900px; /* Wider container */
+    margin: 0 auto;
+    padding: 20px;
+    background-color: var(--secondary-color); /* Keep container white */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+header {
+    text-align: center; /* Center header text */
+    margin-bottom: 20px; /* Space below header */
+}
+
+h1 {
+    color: var(--text-color);
+    border-bottom: 2px solid var(--primary-color);
+    padding-bottom: 10px;
+}
+
+h2 {
+    color: var(--primary-color);
+}
+
+main {
+    margin-bottom: 20px;
+}
+
+.featured-flavors ul {
+    list-style-type: none; /* Remove default bullets */
+    padding: 0; /* No padding */
+}
+
+.featured-flavors li {
+    background: #f0f0f0; /* Light grey background for list items */
+    padding: 12px;
+    margin: 10px 0; /* Space between items */
+    border-radius: 5px; /* Rounded corners */
+    transition: background 0.3s; /* Smooth transition */
+}
+
+.featured-flavors li:hover {
+    background: #e0e0e0; /* Darker grey on hover */
+}
+
+.get-involved {
+    text-align: center; /* Center align section */
+    margin: 20px 0;
+}
+
+.btn {
+    display: inline-block; /* Make it behave like a block element */
+    background-color: var(--highlight-color); /* Primary button color */
+    color: white; /* Text color */
+    padding: 10px 20px; /* Padding */
+    border-radius: 5px; /* Rounded corners */
+    text-decoration: none; /* Remove underline */
+    transition: background 0.3s; /* Smooth transition */
+    margin-top: 15px; /* Space above button */
+}
+
+.btn:hover {
+    background-color: #e07b00; /* Darker shade on hover */
+}
+
+footer {
+    text-align: center; /* Center footer text */
+    margin-top: 20px; /* Space above footer */
+    padding: 20px 0; /* Vertical padding */
+    color: var(--text-color); /* Consistent footer text color */
+}
+
+.social-icons {
+    margin-top: 10px; /* Space above social icons */
+}
+
+.social-icon {
+    color: var(--primary-color);
+    margin: 0 10px; /* Space between icons */
+    font-size: 20px; /* Increase icon size */
+    transition: color 0.3s; /* Smooth transition for color */
+}
+
+.social-icon:hover {
+    color: #ff8c00; /* Change color on hover */
+}
+
+@media (max-width: 600px) {
+    .container {
+        padding: 15px; /* Reduce padding on small screens */
+    }
+
+    h1 {
+        font-size: 24px; /* Smaller header size */
+    }
+
+    h2 {
+        font-size: 20px; /* Smaller subheader size */
+    }
+}
+/* inventory/static/inventory/style.css */
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+:root {
+    --primary-color: #4CAF50; /* Green */
+    --secondary-color: #ffffff; /* White */
+    --text-color: #333333; /* Dark text */
+    --background-color: #f0f8ff; /* Alice blue background color for the whole page */
+    --highlight-color: #ff8c00; /* Highlight color for buttons */
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: var(--background-color); /* Set background color */
+    margin: 0;
+}
+
+.container {
+    max-width: 900px; /* Limit container width */
+    margin: 0 auto; /* Center align */
+    padding: 20px;
+    background-color: var(--secondary-color); /* White background for content */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    border-radius: 10px; /* Rounded corners */
+}
+
+header {
+    text-align: center; /* Center header text */
+    margin-bottom: 20px; /* Space below header */
+}
+
+h1 {
+    color: var(--text-color);
+    border-bottom: 2px solid var(--primary-color);
+    padding-bottom: 10px;
+}
+
+h2 {
+    color: var(--primary-color);
+}
+
+.flavor-list {
+    list-style-type: none; /* Remove bullets */
+    padding: 0; /* No padding */
+}
+
+.flavor-item {
+    background: #e7f4fe; /* Light blue background for flavor items */
+    margin: 10px 0; /* Space between items */
+    padding: 15px; /* Padding around items */
+    border-radius: 5px; /* Rounded corners */
+    transition: background 0.3s; /* Smooth transition */
+}
+
+.flavor-item:hover {
+    background: #d0e7ff; /* Slightly darker blue on hover */
+}
+
+footer {
+    text-align: center; /* Center footer text */
+    margin-top: 20px; /* Space above footer */
+    padding: 20px 0; /* Vertical padding */
+    color: var(--text-color); /* Consistent footer text color */
+}
+
+.btn {
+    display: inline-block; /* Make it behave like a block element */
+    background-color: var(--highlight-color); /* Primary button color */
+    color: white; /* Text color */
+    padding: 10px 20px; /* Padding */
+    border-radius: 5px; /* Rounded corners */
+    text-decoration: none; /* Remove underline */
+    transition: background 0.3s; /* Smooth transition */
+    margin-top: 15px; /* Space above button */
+}
+
+.btn:hover {
+    background-color: #e07b00; /* Darker shade on hover */
+}
+
+@media (max-width: 600px) {
+    .container {
+        padding: 15px; /* Reduce padding on small screens */
+    }
+
+    h1 {
+        font-size: 24px; /* Smaller header size */
+    }
+
+    h2 {
+        font-size: 20px; /* Smaller subheader size */
+    }
+}
+/* inventory/static/inventory/style.css */
+
+.flavor-list {
+    list-style-type: none; /* Remove default list styling */
+    padding: 0; /* Remove padding */
+    margin: 20px 0; /* Space around the list */
+}
+
+.flavor-item {
+    display: flex; /* Use flexbox for layout */
+    align-items: center; /* Center items vertically */
+    background: #f9f9f9; /* Light background for flavor items */
+    margin-bottom: 15px; /* Space between items */
+    padding: 15px; /* Padding around items */
+    border-radius: 5px; /* Rounded corners */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    transition: transform 0.2s; /* Animation for hover */
+}
+
+.flavor-item:hover {
+    transform: scale(1.02); /* Slight scale effect on hover */
+}
+
+.flavor-image {
+    flex: 0 0 100px; /* Fixed width for images */
+    margin-right: 15px; /* Space between image and text */
+}
+
+.flavor-image img {
+    width: 100%; /* Make image responsive */
+    border-radius: 5px; /* Rounded corners for images */
+}
+
+.flavor-details {
+    flex: 1; /* Allow details to fill the remaining space */
+}
+
+.price {
+    font-weight: bold; /* Bold price for emphasis */
+    color: #007bff; /* Change color for better visibility */
+}
+
+.tasting-notes {
+    font-style: italic; /* Italic style for tasting notes */
+    color: #555; /* Slightly muted color */
+}
+
+.btn {
+    display: inline-block; /* Block style for button */
+    background-color: #4CAF50; /* Primary button color */
+    color: white; /* Text color */
+    padding: 10px 20px; /* Padding */
+    border-radius: 5px; /* Rounded corners */
+    text-decoration: none; /* Remove underline */
+    transition: background 0.3s; /* Smooth transition */
+}
+
+.btn:hover {
+    background-color: #45a049; /* Darker shade on hover */
+}
+/* inventory/static/inventory/style.css */
+
+body {
+    font-family: 'Roboto', sans-serif; /* Change to a more modern font */
+    background-color: #e8f5e9; /* Light green background for a fresh look */
+    color: #333; /* Text color */
+}
+
+.container {
+    max-width: 800px; /* Limit container width */
+    margin: 0 auto; /* Center align */
+    padding: 20px;
+    background-color: #ffffff; /* White background for content */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Soft shadow */
+}
+
+header {
+    text-align: center; /* Center align header text */
+    margin-bottom: 30px; /* Space below header */
+}
+
+h1 {
+    color: #2c3e50; /* Darker color for the main title */
+    font-size: 2.5em; /* Larger title */
+    margin: 0; /* Remove default margin */
+}
+
+p {
+    font-size: 1.2em; /* Slightly larger font for the description */
+    color: #555; /* Light grey color for the description */
+}
+
+.ingredient-list {
+    list-style-type: none; /* Remove default list styling */
+    padding: 0; /* Remove padding */
+    margin: 20px 0; /* Space around the list */
+}
+
+.ingredient-item {
+    background: #f1f8e9; /* Very light green background for ingredient items */
+    margin-bottom: 15px; /* Space between items */
+    padding: 15px; /* Padding around items */
+    border-left: 6px solid #4CAF50; /* Green left border */
+    border-radius: 5px; /* Rounded corners */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    transition: transform 0.2s, box-shadow 0.2s; /* Animation for hover */
+}
+
+.ingredient-item:hover {
+    transform: translateY(-2px); /* Slight upward movement on hover */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15); /* Darker shadow on hover */
+}
+
+.quantity {
+    color: #388E3C; /* Dark green for quantity text */
+    font-weight: bold; /* Bold quantity for emphasis */
+}
+
+footer {
+    text-align: center; /* Center footer text */
+    margin-top: 30px; /* Space above footer */
+    padding: 20px 0; /* Vertical padding */
+    font-size: 0.9em; /* Smaller footer font */
+}
+/* inventory/static/inventory/style.css */
+
+body {
+    background-color: #f0f8ff; /* Light background color for the page */
+    font-family: Arial, sans-serif; /* Clean font for better readability */
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    background-color: white; /* White background for the content area */
+}
+
+header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+h1 {
+    color: #4b0082; /* Dark purple color for the title */
+}
+
+p {
+    font-size: 1.1em; /* Slightly larger font for better readability */
+}
+
+.suggestion-form {
+    background-color: #f9f9f9; /* Light background for the form */
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    padding: 20px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #333; /* Darker label color for contrast */
+}
+
+.input-field {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1em;
+}
+
+.input-field:focus {
+    border-color: #4b0082; /* Dark purple border on focus */
+    outline: none; /* Remove outline */
+}
+
+textarea {
+    height: 100px; /* Height for the allergy concern textarea */
+}
+
+.btn {
+    background-color: #4b0082; /* Primary button color */
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.btn:hover {
+    background-color: #6a0dad; /* Darker shade on hover */
+}
+
+footer {
+    text-align: center;
+    margin-top: 40px;
+    padding: 20px 0;
+}
+
+.social-icons {
+    margin-top: 10px;
+}
+
+.social-icon {
+    color: #4b0082; /* Social icon color */
+    margin: 0 10px;
+    font-size: 1.5em; /* Larger icons */
+}
+
+@media (max-width: 600px) {
+    .input-field {
+        font-size: 0.9em; /* Adjust font size for smaller screens */
+    }
+}
+.try-now {
+    background-color: #ff5733; /* Bright color for the Try Now button */
+    font-size: 1.2em; /* Slightly larger font */
+    padding: 15px 25px; /* Increased padding for a more substantial button */
+    border-radius: 8px; /* Rounded corners */
+    margin-top: 20px; /* Space above the button */
+    transition: background-color 0.3s, transform 0.2s; /* Smooth hover effects */
+}
+
+.try-now:hover {
+    background-color: #ff704d; /* Darker shade on hover */
+    transform: scale(1.05); /* Slightly enlarge on hover */
+}
+.social-icons {
+    display: flex;
+    gap: 10px; /* Spacing between icons */
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.social-icon {
+    color: #333; /* Default color for icons */
+    font-size: 24px; /* Adjust size as needed */
+    transition: color 0.3s ease;
+}
+
+.social-icon:hover {
+    color: #ff6347; /* Change to your desired hover color */
+}
+
+
+

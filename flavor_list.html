@@ -1,0 +1,47 @@
+<!-- inventory/templates/inventory/flavor_list.html -->
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Responsive design -->
+    <title>Seasonal Flavors</title>
+    <link rel="stylesheet" href="{% static 'inventory/style.css' %}">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Seasonal Flavors</h1>
+            <p>Explore our delicious seasonal flavors available for you!</p>
+        </header>
+
+        <main>
+            <ul class="flavor-list">
+                {% if flavors %}
+                    {% for flavor in flavors %}
+                        <li class="flavor-item">
+                            <div class="flavor-details">
+                                <strong>{{ flavor.name }}</strong> - {{ flavor.description }}
+                            </div>
+                        </li>
+                    {% endfor %}
+                {% else %}
+                    <li>No seasonal flavors available at this time.</li>
+                {% endif %}
+            </ul>
+        </main>
+
+        <footer>
+            <a class="btn" href="{% url 'homepage' %}">Go back to homepage</a>
+            <p>&copy; 2024 Chocolate House. All rights reserved.</p>
+        </footer>
+    </div>
+</body>
+</html>
+
+
+
+
+
+
+

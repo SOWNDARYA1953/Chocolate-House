@@ -1,0 +1,61 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Responsive design -->
+    <title>Chocolate House Homepage</title>
+    <link rel="stylesheet" href="{% static 'inventory/style.css' %}"> <!-- Linking the CSS file -->
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-vmQqHyBQQXn1KNSF5b0VJQWrDsmTs2t6Hw3wL8M0zZVntGJQOv9d1B9wmPB1Ej23wOUnRve5kXz6N0POB3yH1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Welcome to the Chocolate House</h1>
+            <p>Your destination for delightful seasonal flavors!</p>
+        </header>
+        
+        <main>
+            <section class="featured-flavors">
+                <h2>Featured Flavors</h2>
+                <p>Explore our seasonal offerings and discover your new favorite chocolate!</p>
+                <ul>
+                    <li><strong>Dark Chocolate with Sea Salt</strong> - A rich dark chocolate blended with a touch of sea salt.</li>
+                    <li><strong>Mint Chocolate</strong> - Refreshing mint combined with smooth chocolate.</li>
+                    <li><strong>Hazelnut Delight</strong> - Creamy hazelnut chocolate for a nutty treat.</li>
+                    <li><strong>Raspberry Truffle</strong> - Dark chocolate filled with raspberry ganache for a tangy twist.</li>
+                    <li><strong>White Chocolate with Pistachio</strong> - Creamy white chocolate combined with crunchy pistachios.</li>
+                    <li><strong>Spicy Cinnamon Chocolate</strong> - A warm blend of rich chocolate with a hint of cinnamon spice.</li>
+                    <li><strong>Caramel Sea Salt</strong> - Smooth caramel paired with rich chocolate and a sprinkle of sea salt.</li>
+                </ul>
+            </section>
+            
+            <section class="get-involved">
+                <h2>Get Involved!</h2>
+                <p>We'd love to hear from you! Choose an option below:</p>
+                <div class="action-buttons">
+                    
+                    <a href="{% url 'flavor_list' %}" class="btn">View All Flavors</a><br>
+
+                    <a href="{% url 'ingredient_list' %}" class="btn">View Ingredients</a><br>
+                    <a href="{% url 'suggest_flavor' %}" class="btn">Suggest a New Flavor</a><br>
+                    
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <p>&copy; 2024 Chocolate House. All rights reserved.</p>
+            <div class="social-icons">
+                <a href="https://facebook.com" target="_blank" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://twitter.com" target="_blank" class="social-icon"><i class="fab fa-twitter"></i></a>
+                <a href="https://instagram.com" target="_blank" class="social-icon"><i class="fab fa-instagram"></i></a>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>
+
+
+

@@ -1,0 +1,72 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Responsive design -->
+    <title>Suggest a Flavor</title>
+    <link rel="stylesheet" href="{% static 'inventory/style.css' %}"> <!-- Linking the CSS file -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-vmQqHyBQQXn1KNSF5b0VJQWrDsmTs2t6Hw3wL8M0zZVntGJQOv9d1B9wmPB1Ej23wOUnRve5kXz6N0POB3yH1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        .form-group {
+            position: relative;
+            margin-bottom: 20px;
+        }
+        .form-group .input-field {
+            padding-left: 30px; /* Add padding to prevent text from overlapping with the icon */
+        }
+        .form-group .icon {
+            position: absolute;
+            left: 10px; /* Positioning the icon */
+            top: 50%; /* Centering the icon vertically */
+            transform: translateY(-50%); /* Adjusting the icon's vertical position */
+            color: #888; /* Icon color */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Suggest a New Flavor</h1>
+            <p>We love hearing your ideas! Share your creativity with us.</p>
+        </header>
+
+        <main>
+            {% if submitted %}
+                <div class="thank-you-message">
+                    <h2>Thank You!</h2>
+                    <p>Your flavor suggestion has been submitted. We appreciate your creativity!</p>
+                    <a class="btn" href="{% url 'homepage' %}">Go back to homepage</a>
+                </div>
+            {% else %}
+                <form method="post" class="suggestion-form">
+                    {% csrf_token %}
+                    <div class="form-group">
+                        <i class="fas fa-ice-cream icon"></i> <!-- Ice Cream Icon -->
+                        <label for="flavor_name">Flavor Suggestion:</label>
+                        <input type="text" id="flavor_name" name="flavor_name" placeholder="e.g., Spicy Mango Chocolate" required class="input-field">
+                    </div>
+                    
+                    <div class="form-group">
+                        <i class="fas fa-exclamation-triangle icon"></i> <!-- Allergy Concern Icon -->
+                        <label for="allergy_concern">Allergy Concern:</label>
+                        <textarea id="allergy_concern" name="allergy_concern" placeholder="e.g., Contains nuts" class="input-field"></textarea>
+                    </div>
+
+                    <button type="submit" class="btn"><i class="fas fa-paper-plane"></i> Submit</button> <!-- Submit Button Icon -->
+                </form>
+            {% endif %}
+        </main>
+
+        <footer>
+            
+            <p>&copy; 2024 Chocolate House. All rights reserved.</p>
+            <div class="social-icons">
+                <a href="https://facebook.com" target="_blank" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://twitter.com" target="_blank" class="social-icon"><i class="fab fa-twitter"></i></a>
+                <a href="https://instagram.com" target="_blank" class="social-icon"><i class="fab fa-instagram"></i></a>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>

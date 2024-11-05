@@ -1,0 +1,35 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thank You</title>
+    <link rel="stylesheet" href="{% static 'inventory/style.css' %}"> <!-- Adjust path as necessary -->
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Thank You!</h1>
+            <p>Your suggestion has been received. We appreciate your feedback!</p>
+        </header>
+        
+        <main>
+            <a href="{% url 'homepage' %}" class="btn">Go back to homepage</a>
+        </main>
+
+        <footer>
+            <p>&copy; 2024 Chocolate House. All rights reserved.</p>
+            <div class="social-icons">
+                <a href="https://facebook.com" target="_blank" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://twitter.com" target="_blank" class="social-icon"><i class="fab fa-twitter"></i></a>
+                <a href="https://instagram.com" target="_blank" class="social-icon"><i class="fab fa-instagram"></i></a>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>
+
+
+
+
