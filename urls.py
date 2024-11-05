@@ -8,3 +8,16 @@ urlpatterns = [
     path('suggest/', views.suggest_flavor, name='suggest_flavor'),
     path('thank_you/', views.ThankYouView.as_view(), name='thank_you'),
 ]
+
+
+# chocolate_house/urls.py
+from django.contrib import admin
+from django.urls import path, include
+from inventory import views as inventory_views  # Import the homepage view
+
+urlpatterns = [
+    path('admin/', admin.site.urls),
+    path('inventory/', include('inventory.urls')),  # Existing routes for inventory app
+    path('', inventory_views.homepage, name='homepage'),  # Homepage route
+   
+]
