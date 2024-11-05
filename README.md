@@ -4,10 +4,13 @@ This is a chocolate house project
 Project Structure and Steps
 
 Set Up Django Project:
+
 1.Start a new Django project and app:
+
            django-admin startproject chocolate_house
            cd chocolate_house
            python manage.py startapp inventory
+           
 2.Configure Database (SQLite):
     SQLite is Django's default database, so no configuration changes are needed in settings.py.
 3.Define Models:
