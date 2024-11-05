@@ -12,11 +12,9 @@ Set Up Django Project:
            python manage.py startapp inventory
            
 2.Configure Database (SQLite):
-
     SQLite is Django's default database, so no configuration changes are needed in settings.py.
     
 3.Define Models:
-
     Create models for Seasonal Flavors, Ingredients, and Customer Suggestions in inventory/models.py.
     
 4.Create Admin Interface:
