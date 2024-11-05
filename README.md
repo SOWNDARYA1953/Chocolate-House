@@ -1,9 +1,5 @@
 # Chocolate-House
 
-clone link:
-
-     C:\Users\prash\OneDrive\Desktop\L7 assignment\chocolate_house>
-
 This is a chocolate house project
 
 Project Structure and Steps
